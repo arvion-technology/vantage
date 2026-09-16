@@ -1,0 +1,32 @@
+{
+  "name": "vantage",
+  "version": "1.0.0",
+  "description": "A Vue 3 admin console with composable stores, accounts, plans, usage and an audit log.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "Arvion Technologies <hello@arviontech.net> (https://arviontech.net)",
+  "homepage": "https://arvion-technology.github.io/labs/demos/vantage/",
+  "repository": { "type": "git", "url": "git+https://github.com/arvion-technology/vantage.git" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/postbuild.mjs",
+    "test": "node --experimental-strip-types --test test/",
+    "typecheck": "vue-tsc --noEmit",
+    "demo": "node scripts/serve.mjs . 4173",
+    "shot": "node scripts/shot.mjs 1440 900 docs/screenshot.png",
+    "shot:2": "node scripts/shot.mjs 1440 900 docs/screenshot-2.png '#accounts'",
+    "verify": "node --experimental-strip-types --test test/ && node scripts/serve-check.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vue-tsc": "^3.0.8"
+  },
+  "engines": { "node": ">=20.19" }
+}
