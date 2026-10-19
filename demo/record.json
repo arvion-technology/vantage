@@ -1,0 +1,14 @@
+[
+  { "wait": 900 },
+  { "click": "#nav-accounts" },
+  { "wait": 800 },
+  { "click": "#select-acc-1004" },
+  { "click": "#select-acc-1007" },
+  { "wait": 500 },
+  { "click": "#bulk-suspend" },
+  { "wait": 900 },
+  { "click": "#nav-audit" },
+  { "wait": 1200 },
+  { "click": "#nav-plans" },
+  { "wait": 1200 }
+]
