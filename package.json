@@ -7,11 +7,14 @@
   "license": "MIT",
   "author": "Arvion Technologies <hello@arviontech.net> (https://arviontech.net)",
   "homepage": "https://arvion-technology.github.io/labs/demos/vantage/",
-  "repository": { "type": "git", "url": "git+https://github.com/arvion-technology/vantage.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvion-technology/vantage.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && node scripts/postbuild.mjs",
-    "test": "node --experimental-strip-types --test test/",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
     "typecheck": "vue-tsc --noEmit",
     "demo": "node scripts/serve.mjs . 4173",
     "shot": "node scripts/shot.mjs 1440 900 docs/screenshot.png",
@@ -28,5 +31,7 @@
     "vite": "^7.1.7",
     "vue-tsc": "^3.0.8"
   },
-  "engines": { "node": ">=20.19" }
+  "engines": {
+    "node": ">=20.19"
+  }
 }
